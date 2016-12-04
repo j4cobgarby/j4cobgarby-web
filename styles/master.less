@@ -1,0 +1,156 @@
+// out: master.css, compress: true
+
+@header-bg: #fffa80;
+@header-color: #ff009d;
+@body-bg: #80fffa;
+
+@header-height: 300px;
+
+div.header
+{
+    width: 100%;
+    //min-height: @header-height;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    text-align: center;
+
+    background-color: @header-bg;
+
+    h1
+    {
+        font-family: Voltaire;
+        font-size: 200px;
+
+        color: @header-color;
+        text-shadow: 8px 8px 0 @body-bg;
+    }
+
+    h2
+    {
+        font-family: Voltaire;
+        font-size: 100px;
+
+        color: @header-color;
+        text-shadow: 8px 8px 0 @body-bg;
+    }
+
+    div.buttons
+    {
+        height: 40px;
+        margin-top: 60px;
+
+        button:hover, a:hover
+        {
+            transform: translate(1px, 1px);
+
+            background-color: darken(@header-color, 3%);
+            box-shadow: 7px 7px 0 @body-bg;
+        }
+
+            button:active, a:active
+            {
+                transform: translate(3px, 3px);
+
+                background-color: darken(@header-color, 5%);
+                box-shadow: 5px 5px 0 @body-bg;
+            }
+
+                button, a
+                {
+                    font-family: Montserrat;
+                    font-size: 15px;
+                    font-weight: bold;
+
+                    margin: 10px 20px 10px 20px;
+                    padding: 9px 14px 9px 14px;
+
+                    color: #fff;
+                    border: 0 solid darken(@header-color, 5%);
+                    border-radius: 9px;
+                    outline: none;
+                    background-color: @header-color;
+                    box-shadow: 8px 8px 0 @body-bg;
+                }
+    }
+}
+
+div.tert-header
+{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    text-align: center;
+
+    border-top: 12px solid @header-color;
+    border-bottom: 12px solid @header-color;
+    background-color: @header-bg;
+
+    hr
+    {
+        width: 60%;
+        margin-top: 20px;
+
+        border: none;
+        border-top: 4px solid @header-color;
+    }
+
+    p
+    {
+        font-family: Source Sans Pro;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 25px;
+
+        max-width: 50%;
+        margin: auto;
+        margin-top: 30px;
+
+        text-align: justify;
+        letter-spacing: 1px;
+
+        color: @header-color;
+    }
+
+    h1
+    {
+        font-family: Voltaire;
+        font-size: 200px;
+
+        color: @header-color;
+        text-shadow: 8px 8px 0 @body-bg;
+    }
+
+    h2
+    {
+        font-family: Voltaire;
+        font-size: 100px;
+
+        color: @header-color;
+        text-shadow: 8px 8px 0 @body-bg;
+    }
+}
+
+p.legal
+{
+    font-family: Montserrat;
+
+    width: 30%;
+    margin: 5px auto 50px auto;
+    padding: 10px 6px 10px 6px;
+
+    text-align: center;
+
+    color: @header-color;
+    border: 2px solid @header-color;
+    border-radius: 8px;
+    background-color: @header-bg;
+}
+
+body
+{
+    background-color: @body-bg;
+}

@@ -1,0 +1,27 @@
+.zig-zag-bottom
+{
+    margin: 32px 0;
+    margin-top: 0;
+
+    background: #ff009d;
+}
+
+.zig-zag-bottom:after
+{
+    position: relative;
+    top: 75px;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 32px;
+
+    content: '';
+
+    background: linear-gradient(-45deg, transparent 16px, #ff009d 0),
+    linear-gradient(45deg, transparent 16px, #ff009d  0);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: 22px 32px;
+}
